@@ -23,11 +23,12 @@ import SaveIcon from '@material-ui/icons/Save'
 
 const useStyles = makeStyles(theme => ({
     select:{
-        marginBottom: theme.spacing(2)
+        marginBottom: theme.spacing(2),
     },
     botao: {
         marginTop: theme.spacing(2),
-    }
+    },
+    
   }))
 
   
@@ -172,6 +173,48 @@ export default function Produtos() {
 
                 <Grid item xs={12} md={6}>
                     
+                    <TableContainer>
+                        <Table>
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>Código</TableCell>
+                                    <TableCell>Nome</TableCell>
+                                    <TableCell>Preço</TableCell>
+                                    <TableCell>Quantidade</TableCell>
+                                    <TableCell>Descrição</TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                {produtos.map((p) => (
+                                    <TableRow key={p.id}>
+                                        <TableCell>{p.id}</TableCell>
+                                        <TableCell>{p.nome}</TableCell>
+                                        <TableCell>R$ {p.preco}</TableCell>
+                                        <TableCell>{p.qntd}</TableCell>
+                                        <TableCell>{p.desc}</TableCell>
+                                        <TableCell>
+                                            <Button startIcon={<DeleteIcon />}
+                                                onClick={() => apagaRegistro(p.id)}
+                                                variant="outlined" color="secondary">Apagar</Button>
+                                            <Button startIcon={<EditIcon />}
+                                                onClick={() => {
+                                                    setProduto(p)
+                                                    setEditando(true)
+                                                }}
+                                                variant="outlined" color="primary">Editar</Button>
+                                        </TableCell>
+                                    </TableRow>
+                                ))}
+                                {produtos.length === 0 &&
+                                <Typography 
+                                    component="h3"
+                                    align="center">Não existe nenhum produto cadastrado!</Typography>
+                                }
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+
                 </Grid>
             </Grid>
         </div>
