@@ -3,21 +3,21 @@ import './App.css';
 import { createMuiTheme, responsiveFontSizes, MuiThemeProvider } from '@material-ui/core'
 import {
   orange,
-  lightBlue,
-  blue,
-  deepOrange
+  deepOrange,
+  amber
 } from "@material-ui/core/colors";
-import Rotas from './rotas'
+
+import Rotas from './rotas';
 
 
-import Dashboard from "./pages/Dashboard"
+// import Dashboard from "./pages/Dashboard"
 
 function App() {
 
   const temaDark = false
   const tipoPaleta = temaDark ? 'dark' : 'light'
-  const corPrimaria = temaDark ? orange[500] : blue[500]
-  const corSecundaria = temaDark ? deepOrange[900] : lightBlue[500]
+  const corPrimaria = temaDark ? orange[700] : orange[500]
+  const corSecundaria = temaDark ? deepOrange[900] : amber[500]
 
   let theme = createMuiTheme(
     {
@@ -37,7 +37,7 @@ function App() {
   return (
     <MuiThemeProvider theme={theme} >
        {/* <Rotas /> */}
-       <Dashboard/>
+       <Rotas/>
     </MuiThemeProvider>
   );
 }

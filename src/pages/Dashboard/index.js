@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Produtos from "../Produtos"
+import Cabecalho from "../Cabecalho"
 
 import ListIcon from '@material-ui/icons/List';
 
@@ -62,6 +63,7 @@ export default function SimpleTabs() {
 
     return (
         <div className={classes.root}>
+            <Cabecalho />
             <AppBar position="static">
                 <Tabs value={value} centered onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Produtos" icon={<ListIcon />} {...a11yProps(0)} />
