@@ -9,7 +9,7 @@ O objetivo do trabalho foi criar uma aplição em React que possua uma área de 
 
 ## Imagem :camera:
 
-![gifProjeto](https://user-images.githubusercontent.com/65318224/100932984-6efcd180-34cb-11eb-832f-3d8d5d2701be.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/65318224/100934433-791fcf80-34cd-11eb-95ae-b84d8270a0fe.gif)
 
 ## Como instalar :hammer_and_wrench:
 
