@@ -7,6 +7,10 @@ O objetivo do trabalho foi criar uma aplição em React que possua uma área de 
 - Vitor Bersani Balan - RGM: 23318481
 - Eric Vieira Marques - RGM: 23016337
 
+## Imagem :camera:
+
+![gifProjeto](https://user-images.githubusercontent.com/65318224/100932984-6efcd180-34cb-11eb-832f-3d8d5d2701be.gif)
+
 ## Como instalar :hammer_and_wrench:
 
 Você precisa ter instalado no seu computador: [Git](https://git-scm.com/) e [Node](https://nodejs.org/en/).
